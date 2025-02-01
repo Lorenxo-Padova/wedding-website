@@ -77,7 +77,7 @@
                             <li><a href="#events">Programma</a></li>
                             <li><a href="#gift">Regalo</a></li>
                             <li><a href="#eng-pics">Qualche foto</a></li>
-                            <li class="hidden-sm hidden-xs"><a href="#video-bg">Glimpse of the city</a></li>
+                            <li class="hidden-sm hidden-xs"><a href="#video-bg">Udine</a></li>
                         </ul>
                         <ul class="member-actions">
                             <li><a href="#map" class="login">Luogo</a></li>
@@ -183,7 +183,7 @@
         <div class="row">
             <div class="col-md-12 text-center">
                 <h3 class="header">PARIGI</h3>
-                <div class="col-md-6">
+                <div class="col-md-6 text-center">
                     <p>
                         2024 - Parigi centrale. Le FFSS comunicano che il treno ripartirà con circa 45 minuti di ritardo causa approfondimenti sul programma di viaggio per le tratte successive (prima del sì sono passati ben tre quarti d’ora...)
                     </p>
@@ -312,19 +312,19 @@
                 <h3>Lista nozze</h3>
                 <p>Ci sono tre modalità con cui potete darci una mano!</p>
                 <div class="row">
-                    <div class="col-md-3 text-center">
-                        <h3>IBAN</h3>
+                    <div class="col-md-4 text-center">
+                        <h4>IBAN</h4>
                         <p>Potete versare il vostro regalo a questo IBAN</p>
                         <p>IT452347523947562934756</p>
                     </div>
-                    <div class="col-md-3 text-center">
-                        <h3>AMAZON</h3>
+                    <div class="col-md-4 text-center">
+                        <h4>AMAZON</h4>
                         <p>Abbiamo una lista di oggetti su amazon(?). Se volete potete comprare qualcosa e inviarlo al nostro indirizzo di casa.</p>
                         <p>INDIRIZZO DI CASA: via -----</p>
                         <p>LISTA SU AMAZON: accessibile a <a href="#" target="_blank">questo</a> link.</p>
                     </div>
-                    <div class="col-md-3 text-center">
-                        <h3>LISTA NOZZE CLASSICA</h3>
+                    <div class="col-md-4 text-center">
+                        <h4>LISTA NOZZE CLASSICA</h4>
                         <p>non ho bene capito sta parte</p>
                     </div>
                 </div>
@@ -501,23 +501,23 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
-                <h3>What are you waiting for?</h3>
-                <p>We would greatly appreciate if you could RSVP before 1st of November '17</p>
+                <h3>QUINDI ALLA FINE CI SARAI?</h3>
+                <p>Fateci sapere attraverso questo form se ci sarete o meno al matrimonio! Per favore ditecelo entro il giorno/mese/anno</p>
                 <form id="rsvp-form" class="rsvp-form"
                       action=""
                       method="POST">
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
-                                <i class="fa fa-envelope"></i><input type="email" name="email" class=""
-                                                                     placeholder="Your email"
-                                                                     required>
+                                <i class="fa fa-user"></i><input name="name" class=""
+                                                                 placeholder="Nome"
+                                                                 required>
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
-                                <i class="fa fa-user"></i><input name="name" class=""
-                                                                 placeholder="Your name"
+                                <i class="fa fa-user"></i><input name="surname" class=""
+                                                                 placeholder="Cognome"
                                                                  required>
                             </div>
                         </div>
@@ -526,11 +526,19 @@
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
                                 <i class="fa fa-users"></i><input type="number" name="extras" class="" min="0"
-                                                                  max="4"
-                                                                  placeholder="Husband/Wife or kids"
+                                                                  max="10"
+                                                                  placeholder="Familiari oltre a te"
                                                                   required>
                             </div>
                         </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group">
+                                <i class="fa fa-envelope"></i><input type="email" name="email" class=""
+                                                                     placeholder="La tua mail"
+                                                                     required>
+                            </div>
+                        </div>
+                        <!--
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
                                 <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code"
@@ -539,13 +547,13 @@
                                                                 required>
                             </div>
                         </div>
+                        -->
                     </div>
                     <div class="row">
                         <div class="col-md-12" id="alert-wrapper"></div>
                     </div>
                     <button class="btn-fill rsvp-btn">
-                        Yes,
-                        that's me!
+                        Ci sarò!
                     </button>
                 </form>
             </div>
@@ -554,6 +562,7 @@
 </section>
 
 <footer>
+    <!--
     <div class="container">
         <div class="row">
             <div class="col-sm-12 text-center content">
@@ -562,6 +571,7 @@
             </div>
         </div>
     </div>
+    -->
 </footer>
 <script src="js/vendor/jquery-1.11.2.min.js" onerror="loadJsFromCDN('jquery.js')"></script>
 <script src="node_modules/waypoints/lib/jquery.waypoints.min.js" onerror="loadJsFromCDN('waypoints.js')"></script>
