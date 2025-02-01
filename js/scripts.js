@@ -218,6 +218,8 @@ $(document).ready(function () {
             && MD5($('#invite_code').val()) !== '2ac7f43695eb0479d5846bb38eec59cc') {
             $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
         } else {
+            console.log("data to be used");
+            console.log(data);
             $.post('https://script.google.com/macros/s/AKfycbz6KmLgiLY63BO9eRaNw7We12SE5EJSRx0S3L5NWBu0LJEgrxO6gQ0X8EmkWSsrNRxo/exec', data)
                 .done(function (data) {
                     console.log(data);
